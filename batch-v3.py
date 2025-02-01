@@ -26,8 +26,12 @@ CONFIG = {
     'max_new_tokens': 500,                  # Maximum number of tokens to generate
     'device': 'cuda:0' if torch.cuda.is_available() else 'cpu', # Device to use
     'error_log': 'processing_errors.log',   # Path to error log file
-    'verbose': False                         # Enable verbose output for debugging purposes
+    'verbose': False                        # Enable verbose output for debugging purposes
 }
+
+def log(message: str):
+    if CONFIG['verbose']:
+        print(message)
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Batch process images with ToriiGate')
@@ -79,30 +83,26 @@ def parse_args():
     # Get the actual provided arguments (ignoring None values)
     provided_args = {k: v for k, v in vars(args).items() if v is not None}
     
-    print("\nProvided command line arguments:")
-    print(provided_args if provided_args else "No command line arguments provided")
+    log("Provided command line arguments:")
+    log(str(provided_args if provided_args else "No command line arguments provided"))
     
-    print("\nCurrent CONFIG before applying arguments:")
+    log("\nCurrent CONFIG before applying arguments:")
     for key, value in CONFIG.items():
-        print(f"{key}: {value}")
+        log(f"{key}: {value}")
     
     # Only update CONFIG with explicitly provided arguments
     if provided_args:
         for arg, value in provided_args.items():
             CONFIG[arg] = value
-        print("\nCONFIG after applying arguments:")
+        log("\nCONFIG after applying arguments:")
         for key, value in CONFIG.items():
-            print(f"{key}: {value}")
-
-def log(message: str):
-    if CONFIG['verbose']:
-        print(message)
+            log(f"{key}: {value}")
 
 def validate_paths():
-    print("\nValidating paths with CONFIG:")
-    print(f"output_to_input_folder: {CONFIG['output_to_input_folder']}")
-    print(f"input_dir: {CONFIG['input_dir']}")
-    print(f"output_dir: {CONFIG['output_dir']}")
+    log("\nValidating paths with CONFIG:")
+    log(f"output_to_input_folder: {CONFIG['output_to_input_folder']}")
+    log(f"input_dir: {CONFIG['input_dir']}")
+    log(f"output_dir: {CONFIG['output_dir']}")
     
     input_dir = Path(CONFIG['input_dir'])
     if not input_dir.exists():
@@ -115,7 +115,7 @@ def validate_paths():
         output_dir.mkdir(parents=True, exist_ok=True)
     else:
         output_dir = input_dir
-        print(f"Using input directory as output directory: {output_dir}")
+        log(f"Using input directory as output directory: {output_dir}")
     
     return input_dir, output_dir
 
