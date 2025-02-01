@@ -20,7 +20,7 @@ CONFIG = {
     'output_dir': 'output',                 # Only used if output_to_input_folder is False
     'output_extension': '.txt',             # Extension for output files   
     'use_input_tags': True,                 # Whether to use input tag files
-    'tag_extension': '.tag',                # Files with this extension will be used as optional input tags for the image
+    'tag_extension': '.tag',                # Files with this extension will be used as optional input tags for the image, if available
     'image_extensions': ('.jpg', '.jpeg', '.png', '.webp', '.gif', '.bmp'), # Image types of images to process
     'model_name': 'Minthy/ToriiGate-v0.3',  # Model to use
     'max_new_tokens': 500,                  # Maximum number of tokens to generate
