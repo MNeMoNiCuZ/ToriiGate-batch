@@ -79,6 +79,11 @@ With the following input:
 
 > The image depicts a close-up view of a Borken, a fictional creature resembling a cat. The Borken has a unique appearance with a mix of feline and reptilian features. Its body is covered in soft, fluffy fur that transitions into scaly skin on its tail. The fur is primarily white with patches of orange and brown, giving it a distinct spotted pattern. The Borken's eyes are large and expressive, with a piercing yellow gaze directed straight at the viewer, creating an intense and captivating look. Its ears are tall and pointed, covered in fur, and its whiskers are long and prominent, adding to its feline-like appearance. The Borken's tail is long and slender, covered in scales that transition into fur at the base. It is raised and curved slightly, indicating alertness or curiosity. The Borken is standing on its hind legs, with its front paws resting on a surface, giving it a slightly humanoid stance. Its claws are visible and sharp, adding to its predatory appearance. The background is blurry, with hints of green foliage and a dark, indistinct surface, keeping the focus on the Borken. The overall atmosphere of the image is one of curiosity and intensity, as the Borken's direct gaze and alert posture engage the viewer.
 
+## Conclusion
+Notice how it incorporated the facts we gave it into the output for the most of it.
+
+But it failed to incorporate the fact that the cat image was a vegetarian. While not perfect, this is still amazing functionality.
+
 ---
 ![Turtle](https://github.com/user-attachments/assets/919b11a4-4b0a-4e78-a392-2e4ff465d20d)
 
@@ -92,9 +97,7 @@ With the following input:
 > The image depicts a terrifyingly cute creature known as a Borken. It has a bulky, reptilian body covered in thick, orange-brown scales. Its skin is wrinkled and textured, giving it a rugged, battle-worn appearance. The Borken's head is adorned with a menacing array of horns and spikes, some of which are sharp and jagged, while others are more rounded and smooth. Its eyes are small and beady, with a piercing, almost predatory gaze that seems to bore into the viewer's soul. The Borken's mouth is a wide, toothy grin, revealing rows of sharp, pointed teeth that seem to be constantly bared in a snarl. Its arms are thick and muscular, ending in sharp, clawed hands that appear ready to strike at any moment. The Borken's legs are similarly powerful and end in sharp claws, giving it a formidable and intimidating presence. Despite its fearsome appearance, the Borken seems to be squatting down, almost as if it is playfully offering itself to the viewer. The background is a blur of green foliage, suggesting that the Borken is outdoors in a natural setting. The overall atmosphere of the image is one of both danger and playfulness, as if the Borken is a cuddly yet deadly pet that is ready to unleash its full fury at any moment.
 
 ## Conclusion
-Notice how it incorporated the facts we gave it into the output for the most of it.
-
-But it failed to incorporate the fact that the cat image was a vegetarian. While not perfect, this is still amazing functionality.
+This one mentions several times that the borken is a friendly pet. Both at the start and the end of the caption.
 
 # gradio-webui.py
 Launch this to use the tool with a gradio app.
