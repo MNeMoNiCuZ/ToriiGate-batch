@@ -12,9 +12,9 @@ I haven't seen much mis-labeling yet, so it appears to handle things verywell.
 > Contains NSFW examples [https://rentry.co/q4pisesb](https://rentry.co/q4pisesb)
 
 # Currently supported models
-- ToriiGate-v0.3
+- [ToriiGate-v0.3](https://huggingface.co/Minthy/ToriiGate-v0.3)
 
-Hopefully v0.4-7B will be supported later
+Hopefully [v0.4-7B](https://huggingface.co/Minthy/ToriiGate-v0.4-7B) will be supported later
 
 # Setup
 1. Git clone this repository `git clone https://github.com/MNeMoNiCuZ/TooriGate-batch`
