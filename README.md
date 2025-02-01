@@ -13,11 +13,13 @@ Place all images you wish to caption in the `/input/` directory and run `py batc
 You should now be set up and able to run the tool.
 
 # Requirements
-- Tested on Python 3.10.
+- Tested on Python 3.11.
 - Tested on Pytorch w. CUDA 12.1.
 
-- At batch size 1 it uses ~10gb VRAM
-- At batch size 8 it uses ~23.6gb VRAM
+- At batch size 1 it uses ~14.2gb VRAM
+- At batch size 8 it uses ~23.3gb VRAM
+
+At 24gb vram, each batch takes ~45 seconds to process on batch 8, and 17 seconds on batch 1.
 
 # Instructions
 This model can process images in 3 different output formats.
