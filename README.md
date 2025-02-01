@@ -1,9 +1,20 @@
 # TooriGate - Batch
 This tool utilizes the TooriGate model to automatically caption multiple image files in an input-folder, for ease of process.
 
-It's a continuation of [https://huggingface.co/TekeshiX/ToriiGate-v0.3](https://huggingface.co/TekeshiX/ToriiGate-v0.3)'s great implementation of a gradio interface for this model.
+The model is incredbily strong, and a fine-tune based on [HuggingFaceM4/Idefics3-8B-Llama3](https://huggingface.co/HuggingFaceM4/Idefics3-8B-Llama3).
 
-Place all images you wish to caption in the `/input/` directory and run `py batch.py`.
+The model handles all sorts of content, including NSFW / Adult images.
+
+I haven't seen much mis-labeling yet, so it appears to handle things verywell.
+
+# Official Model Showcase
+> [!WARNING]
+> Contains NSFW examples [https://rentry.co/q4pisesb](https://rentry.co/q4pisesb)
+
+# Currently supported models
+- ToriiGate-v0.3
+
+Hopefully v0.4-7B will be supported later
 
 # Setup
 1. Git clone this repository `git clone https://github.com/MNeMoNiCuZ/TooriGate-batch`
@@ -23,7 +34,7 @@ You should now be set up and able to run the tool.
 At 24gb vram, each batch takes ~45 seconds to process on batch 8, and 17 seconds on batch 1.
 
 # Instructions
-Run `py batch-v3.py` to make it caption each image in the /input/ folder.
+Place all images you wish to caption in the `/input/` directory and run `py batch-v03.py`.
 
 ## Configuration
 This model can process images in 3 different output formats.
@@ -91,4 +102,4 @@ But it failed to incorporate the fact that the cat image was a vegetarian. While
 # gradio-webui.py
 Launch this to use the tool with a gradio app.
 
-This is created by [TekeshiX](https://huggingface.co/TekeshiX) at [https://huggingface.co/TekeshiX/ToriiGate-v0.3](https://huggingface.co/TekeshiX/ToriiGate-v0.3).
+This was created by [TekeshiX](https://huggingface.co/TekeshiX) at [https://huggingface.co/TekeshiX/ToriiGate-v0.3](https://huggingface.co/TekeshiX/ToriiGate-v0.3).
