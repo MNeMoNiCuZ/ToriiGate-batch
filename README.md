@@ -22,17 +22,22 @@ You should now be set up and able to run the tool.
 At 24gb vram, each batch takes ~45 seconds to process on batch 8, and 17 seconds on batch 1.
 
 # Instructions
+Run `py batch-v3.py` to make it caption each image in the /input/ folder.
+
+## Configuration
 This model can process images in 3 different output formats.
 - JSON-like
 - Detailed
 - Brief
+
+Change the type of output you want in the `description_type` in the CONFIG.
 
 On top of this, it can also receive a text input to help guide it.
 
 These are labeled as `input tags`, but from testing it can take in other information here as well.
 
 ## Input Tags
-In the `batch.py` file, you have a CONFIG value titled `tag_extension`. It defaults to .tag, but this can be changed.
+There's a config named `tag_extension`. It defaults to .tag, but this can be changed.
 If there is a file with this extension next to an image, and if the `use_input_tags` is True, it will include this text-file along with the image as input.
 
 ## Why are input tags useful?
