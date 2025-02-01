@@ -86,3 +86,7 @@ With the following input:
 Notice how it incorporated the facts we gave it into the output for the most of it.
 
 But it failed to incorporate the fact that the cat image was a vegetarian. While not perfect, this is still amazing functionality.
+
+# gradio-webui.py
+Launch this to use the tool with a gradio app.
+This is created by [TekeshiX](https://huggingface.co/TekeshiX) at [https://huggingface.co/TekeshiX/ToriiGate-v0.3](https://huggingface.co/TekeshiX/ToriiGate-v0.3).
