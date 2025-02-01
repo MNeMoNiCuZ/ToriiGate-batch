@@ -1,20 +1,15 @@
 # TooriGate - Batch
 This tool utilizes the TooriGate model to automatically caption multiple image files in an input-folder, for ease of process.
 
-The model is incredbily strong, and a fine-tune based on [HuggingFaceM4/Idefics3-8B-Llama3](https://huggingface.co/HuggingFaceM4/Idefics3-8B-Llama3).
+The model is very strong, and a fine-tune based on [HuggingFaceM4/Idefics3-8B-Llama3](https://huggingface.co/HuggingFaceM4/Idefics3-8B-Llama3).
+
+It's capable of understanding concepts and images that would be impossible for most models, using the [Input Tags](https://github.com/MNeMoNiCuZ/TooriGate-batch/tree/main?tab=readme-ov-file#input-tags) system.
 
 The model handles all sorts of content, including NSFW / Adult images.
-
-I haven't seen much mis-labeling yet, so it appears to handle things verywell.
 
 # Official Model Showcase
 > [!WARNING]
 > Contains NSFW examples [https://rentry.co/q4pisesb](https://rentry.co/q4pisesb)
-
-# Currently supported models
-- [ToriiGate-v0.3](https://huggingface.co/Minthy/ToriiGate-v0.3)
-
-Hopefully [v0.4-7B](https://huggingface.co/Minthy/ToriiGate-v0.4-7B) will be supported later
 
 # Setup
 1. Git clone this repository `git clone https://github.com/MNeMoNiCuZ/TooriGate-batch`
@@ -30,6 +25,8 @@ You should now be set up and able to run the tool.
 
 - At batch size 1 it uses ~14.2gb VRAM
 - At batch size 8 it uses ~23.3gb VRAM
+
+- At batch size 1 with `low_vram=True` it uses ~13.9gb VRAM
 
 At 24gb vram, each batch takes ~45 seconds to process on batch 8, and 17 seconds on batch 1.
 
@@ -103,3 +100,11 @@ But it failed to incorporate the fact that the cat image was a vegetarian. While
 Launch this to use the tool with a gradio app.
 
 This was created by [TekeshiX](https://huggingface.co/TekeshiX) at [https://huggingface.co/TekeshiX/ToriiGate-v0.3](https://huggingface.co/TekeshiX/ToriiGate-v0.3).
+
+# Currently supported versions
+- [ToriiGate-v0.3](https://huggingface.co/Minthy/ToriiGate-v0.3)
+
+Hopefully [v0.4-7B](https://huggingface.co/Minthy/ToriiGate-v0.4-7B) will be supported later
+
+# Future improvements
+- Support low_vram / 4-bit quantization
