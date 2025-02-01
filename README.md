@@ -58,7 +58,7 @@ This is incredibly powerful and makes the model much more versatile than any I h
 
 There will of course be times when it fails to utilize it as you expected. But overall, this feature is incredibly valuable.
 
-# Examples
+# Examples - With or without input
 ![Borken](https://github.com/user-attachments/assets/e40c3e05-c655-473f-97a0-a7cdccd82543)
 
 Without input
@@ -98,6 +98,27 @@ With the following input:
 
 ## Conclusion
 This one mentions several times that the borken is a friendly pet. Both at the start and the end of the caption.
+
+# Examples - Caption Types
+![Borken](https://github.com/user-attachments/assets/e40c3e05-c655-473f-97a0-a7cdccd82543)
+
+All different types support tags. The same tag as the above example is used.
+
+## Brief
+> A Borken, a cat-like creature with orange and white fur, stands on its hind legs, balancing on a surface. Its large, expressive eyes stare directly at the viewer, and its mouth is closed. Long, white whiskers extend from its face. Its orange and white fur covers its body, with a lighter patch on its chest. Sharp, orange claws grip the surface. A blurred background suggests an indoor setting with a hint of greenery.
+
+## Detailed
+> The image depicts a close-up view of a Borken, a fictional creature resembling a cat. The Borken has a unique appearance with a mix of feline and reptilian features. Its body is covered in soft, fluffy fur that transitions into scaly skin on its tail. The fur is primarily white with patches of orange and brown, giving it a distinct spotted pattern. The Borken's eyes are large and expressive, with a piercing yellow gaze that seems to look directly at the viewer. Its ears are tall and pointed, covered in fur, and its whiskers are long and prominent, adding to its feline-like appearance. The Borken's tail is long and slender, covered in scales that transition into fur at the base. The tail is raised and curved slightly, indicating alertness or curiosity. The Borken is standing on its hind legs, with its front paws resting on a surface, giving it a slightly upright and attentive posture. The background is blurry, with hints of green foliage and a dark, indistinct surface, keeping the focus on the Borken. The overall atmosphere of the image is one of curiosity and intrigue, as the Borken's direct gaze and poised stance invite the viewer to wonder about its thoughts and actions.
+
+## JSON-like
+```
+{
+  "character": "The image features a Borken, a fictional creature with a unique appearance. It has a mix of cat and raccoon-like features, with large, pointed cat ears and a fluffy raccoon tail. The Borken's fur is a blend of orange and white, giving it a striking and vibrant look. Its eyes are large and expressive, with a piercing gaze directed at the viewer. The creature's facial features include a small, black nose and prominent whiskers. Its body is perched on its hind legs, with its front paws resting on a surface, showcasing its agility and balance. The Borken's tail is bushy and positioned behind it, adding to its overall charm.",
+  "background": "The background is blurry, with a few green leaves visible, suggesting that the Borken is indoors, possibly near a window or a plant. The depth of field effect makes the Borken stand out prominently against the blurred surroundings.",
+  "texts": "None",
+  "atmosphere": "The overall atmosphere of the image is one of curiosity and intrigue. The Borken's direct gaze and the depth of field effect create a sense of connection with the viewer, making the scene feel intimate and engaging. The lighting is soft, adding warmth and a sense of comfort to the image."
+}
+```
 
 # gradio-webui.py
 Launch this to use the tool with a gradio app.
