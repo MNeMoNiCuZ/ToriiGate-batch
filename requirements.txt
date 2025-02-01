@@ -1,0 +1,6 @@
+git+https://github.com/huggingface/transformers
+accelerate
+bitsandbytes
+gradio>=4.0.0
+#bitsandbytes-windows
+#flash-attn
