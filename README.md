@@ -1,5 +1,6 @@
 # TooriGate - Batch
 This tool utilizes the TooriGate model to automatically caption multiple image files in an input-folder, for ease of process.
+
 It's a continuation of [https://huggingface.co/TekeshiX/ToriiGate-v0.3](https://huggingface.co/TekeshiX/ToriiGate-v0.3)'s great implementation of a gradio interface for this model.
 
 Place all images you wish to caption in the `/input/` directory and run `py batch.py`.
@@ -89,4 +90,5 @@ But it failed to incorporate the fact that the cat image was a vegetarian. While
 
 # gradio-webui.py
 Launch this to use the tool with a gradio app.
+
 This is created by [TekeshiX](https://huggingface.co/TekeshiX) at [https://huggingface.co/TekeshiX/ToriiGate-v0.3](https://huggingface.co/TekeshiX/ToriiGate-v0.3).
