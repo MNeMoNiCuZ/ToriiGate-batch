@@ -7,9 +7,9 @@ It's capable of understanding concepts and images that would be impossible for m
 
 The model handles all sorts of content, including NSFW / Adult images.
 
-Original models: [Minthy/ToriiGate-v0.3](https://huggingface.co/Minthy/ToriiGate-v0.3)
-
-Original models: [Minthy/ToriiGate-v0.4-7B](https://huggingface.co/Minthy/ToriiGate-v0.4-7B)
+### Original models
+- [Minthy/ToriiGate-v0.3](https://huggingface.co/Minthy/ToriiGate-v0.3)
+- [Minthy/ToriiGate-v0.4-7B](https://huggingface.co/Minthy/ToriiGate-v0.4-7B)
 
 # Official Model Showcase
 > [!WARNING]
