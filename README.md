@@ -1,9 +1,9 @@
-# TooriGate - Batch
-This tool utilizes the TooriGate model to automatically caption multiple image files in an input-folder, for ease of process.
+# ToriiGate - Batch
+This tool utilizes the ToriiGate model to automatically caption multiple image files in an input-folder, for ease of process.
 
 The model is very strong, and a fine-tune based on [HuggingFaceM4/Idefics3-8B-Llama3](https://huggingface.co/HuggingFaceM4/Idefics3-8B-Llama3).
 
-It's capable of understanding concepts and images that would be impossible for most models, using the [Input Tags](https://github.com/MNeMoNiCuZ/TooriGate-batch/tree/main?tab=readme-ov-file#input-tags) system.
+It's capable of understanding concepts and images that would be impossible for most models, using the [Input Tags](https://github.com/MNeMoNiCuZ/ToriiGate-batch/tree/main?tab=readme-ov-file#input-tags) system.
 
 The model handles all sorts of content, including NSFW / Adult images.
 
@@ -12,7 +12,7 @@ The model handles all sorts of content, including NSFW / Adult images.
 > Contains NSFW examples [https://rentry.co/q4pisesb](https://rentry.co/q4pisesb)
 
 # Setup
-1. Git clone this repository `git clone https://github.com/MNeMoNiCuZ/TooriGate-batch`
+1. Git clone this repository `git clone https://github.com/MNeMoNiCuZ/ToriiGate-batch`
 2. (Optional) Create a virtual environment for your setup. Use python 3.10 to 3.11. Feel free to use the `venv_create.bat` for a simple windows setup. Activate your venv.
 3. Run `pip install -r requirements.txt` (this is done automatically with the `venv_create.bat`).
 4. Install [PyTorch with CUDA support](https://pytorch.org/) matching your installed CUDA version. Run `nvcc --version` to find out which CUDA is your default.
